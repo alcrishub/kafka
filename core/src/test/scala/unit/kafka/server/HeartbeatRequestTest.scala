@@ -120,7 +120,7 @@ class HeartbeatRequestTest(cluster: ClusterInstance) extends GroupCoordinatorBas
         version = version.toShort
       )
 
-      syncGroupWithOldProtocol(
+      verifySyncGroupWithOldProtocol(
         groupId = "grp",
         memberId = leaderMemberId,
         generationId = leaderEpoch,
